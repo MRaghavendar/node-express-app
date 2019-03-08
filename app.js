@@ -21,7 +21,9 @@ app.get('/Quotes', (req, res) => {
   res.send('<h1>Either way, I think we can all do with a bit more spark to help us perform miracles and live in joy.</h1>')
 })
 
-
+app.get('/Name', (req, res) => {
+  res.send('<h1>Raghavendar Reddy</h1>')
+})
 
 app.get('/big',  (req, res) =>{
   res.send('<h1>Hello World!</h1>')
