@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-const hostname = '127.0.0.1'   // set constants
+const hostname = '0.0.0.0'    // allows access from remote computers
 const port = 3002
 
 app.get('/', function (req, res) {
@@ -11,6 +11,17 @@ app.get('/', function (req, res) {
 app.get('/hello', (req, res) => {
   res.send('Hello World!')
 })
+
+
+app.get('/Wishes', (req, res) => {
+  res.send('<h1>Happy BirthDay!</h1>')
+})
+
+app.get('/Quotes', (req, res) => {
+  res.send('<h1>Either way, I think we can all do with a bit more spark to help us perform miracles and live in joy.</h1>')
+})
+
+
 
 app.get('/big',  (req, res) =>{
   res.send('<h1>Hello World!</h1>')
